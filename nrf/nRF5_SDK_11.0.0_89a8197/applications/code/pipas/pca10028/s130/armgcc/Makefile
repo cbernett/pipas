@@ -240,3 +240,6 @@ flash_softdevice:
 	@echo Flashing: s130_nrf51_2.0.0_softdevice.hex
 	nrfjprog --program ../../../../../../components/softdevice/s130/hex/s130_nrf51_2.0.0_softdevice.hex -f nrf51 --chiperase
 	nrfjprog --reset -f nrf51
+
+flash_device:
+	./flash_device.sh
